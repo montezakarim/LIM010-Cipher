@@ -1,1 +1,4 @@
 /* Acá van tus reglas de estilo */
+body{
+  background-image: url('../img/imAg.jpg');
+}
