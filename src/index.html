@@ -10,7 +10,6 @@
     <center>
     <header>
       <!-- título -->
-      <center>
       <h1>Safe Text</h1>
     </header>
     <main>
@@ -28,7 +27,7 @@
       <!-- si es correcto cifrar o descifrar mensaje -->
       <section class="cifrar-descifrar" id="cifrar-descifrar" style="display: none;">
         <center>
-        <h2 id="usuario"> Hola </h2> <br><br>
+        <h2 id="usuario">Hola</h2> <br>
         <p>Elije que acción vas a realizar</p>
         <button type="button" id="cifrar">Cifrar Mensaje</button>
         <button type="button" id="descifrar">Descubrir Mensaje</button>
@@ -36,32 +35,27 @@
       <!-- Si eleige cifrar -->
       <section class="offsetcifrar" id="offsetcifrar" style="display: none;">
         <center>
-        <p>Muchas gracias, ingresa el código  de tu Mensaje <br> (Recuerda que es de 1 o 2 dígitos) </p>
+        <p>Ingresa el texto de tu mensaje a cifrar <br><br> Y el código para cifrar <br>(Recuerda que es de 1 o 2 dígitos) <br>  </p>
+        <input type="text" id="textcif" placeholder="Ingresa el texto a cifrar">
+        <br><br><br>
         <input type="number" id="offsetci" requerid>
         <button type="button" id="aceptarcifrar">Aceptar</button>
       </section>
       <!-- Si eleige descifrar -->
       <section class="offsetdescifrar" id="offsetdescifrar" style="display: none;">
         <center>
-        <p>Muchas gracias, ingresa el código  para descifrar <br> (Recuerda que es de 1 o 2 dígitos) </p>
+        <p>Ingresa el texto del mensaje a descubrir <br><br>Y el código  para descifrar <br>(Recuerda que es de 1 o 2 dígitos) </p>
+        <input type="text" id="textdescif" placeholder="Ingresa el texto que vas a descifrar">
+        <br><br><br>
         <input type="number" id="offsetde" requerid>
         <button type="button" id="aceptardescifrar">Aceptar</button>
       </section>
-      <!-- ingresar texto a cifrar-->
-      <section class="ingtextcif" id="ingtextcif" style="display: none;">
-        <input type="text" id="textcif" placeholder="Ingresa el texto a cifrar">
-        <button type="button" id="cifrartext">Cifrar</button>
-      </section>
-      <!-- ingresar atexto a descifrar -->
-      <section class="ingtextdescif" id="ingtextdescif" style="display: none;">
-        <input type="text" id="textcif" placeholder="Ingresa el texto que vas a descifrar">
-        <button type="button" id="descifrartext">Descifrar</button>
-      </section>
-      <!-- mensaje cifrado y finalizar -->
+            <!-- mensaje cifrado y finalizar -->
       <section class="mensajecifrado" id="mensajecifrado" style="display: none;">
-        <h2 id="encriptado"></h2>
+        <p id="encriptado">
+        </p>
         <br><br>
-        <p>Ahora puedes compartir este mensaje con total seguridad</p>
+        <p1>Ahora puedes compartir este mensaje con total seguridad</p1>
         <button type="button" id="fin">Finalizar</button>
       </section>
       <!-- mensaje descifrar y finalizar -->
@@ -71,11 +65,9 @@
         <p>Recuerda que con Safe Text puedes enviar y recibir mensajes 100% seguro</p>
         <button type="button" id="fin1">Finalizar</button>
       </section>
-
   </main>
     <!-- Pie de página -->
-    <footer>
-      <center><br><br><br>
+    <footer><br>
        (c) Todos los Derechos Reservados - Elaborado por Karim Monteza<br> <a href="mailto:kmonteza@hootmail.co"></a> </p>
   </footer>
     <script src="cipher.js"></script>

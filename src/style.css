@@ -1,4 +1,86 @@
 /* Acá van tus reglas de estilo */
-body{
-  background-image: url('../img/imAg.jpg');
+header{
+  color:black;
+  font-size: 36pt;
+  text-align: center;
+  background-color:#C0C0C0 ;
+  width: 430px;
+  height: 100px;
+  border:2px;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/seguro.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer{
+  color:black;
+  background-color: #C0C0C0;
+  font-size: 15px;
+  text-align: center;
+  width:430px;
+  height:50px;
+  border:2px;
+}
+
+.nombre-contraseña{
+  background:#D4E6F1;
+  width:430px;
+  height:310px;
+  border:2px;
+  border-color: #C0C0C0;
+  border-style:solid;
+}
+.cifrar-descifrar{
+  background: #D4E6F1;
+  width:430px;
+  height:310px;
+  border:2px;
+  border-color: #C0C0C0;
+  border-style:solid;
+}
+.offsetcifrar{
+  background:#D4E6F1;
+  width:430px;
+  height:310px;
+  border:2px;
+  border-color: #C0C0C0;
+  border-style:solid;
+}
+.offsetdescifrar{
+  background: #D4E6F1;
+  width:430px;
+  height:310px;
+  border:2px;
+  border-color: #C0C0C0;
+  border-style:solid;
+}
+.mensajecifrado{
+  background: #D4E6F1;
+  width:430px;
+  height:310px;
+  border:2px;
+  border-color: #C0C0C0;
+  border-style:solid;
+}
+.mensajedescifrado{
+  background: #D4E6F1;
+  width:430px;
+  height:310px;
+  border:2px;
+  border-color: #C0C0C0;
+  border-style:solid;
+}
+button {
+    background: #eb94d0;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+
+  }
