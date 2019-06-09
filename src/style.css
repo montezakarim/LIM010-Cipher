@@ -7,6 +7,7 @@ header{
   width: 430px;
   height: 100px;
   border:2px;
+  align-content: center;
 }
 
 body{
@@ -15,6 +16,8 @@ body{
   background-image: url('../img/seguro.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  align-content: center;
+
 }
 
 footer{
@@ -25,6 +28,7 @@ footer{
   width:430px;
   height:50px;
   border:2px;
+  text-align: center;
 }
 
 .nombre-contraseña{
@@ -42,24 +46,28 @@ footer{
   border:2px;
   border-color: #C0C0C0;
   border-style:solid;
+  display: none;
 }
-.offsetcifrar{
-  background:#D4E6F1;
-  width:430px;
-  height:310px;
-  border:2px;
-  border-color: #C0C0C0;
-  border-style:solid;
-}
-.offsetdescifrar{
+.cifrado{
   background: #D4E6F1;
   width:430px;
   height:310px;
   border:2px;
   border-color: #C0C0C0;
   border-style:solid;
+  display: none;
+}
+.descifrado{
+  background: #D4E6F1;
+  width:430px;
+  height:310px;
+  border:2px;
+  border-color: #C0C0C0;
+  border-style:solid;
+  display: none;
 }
 .mensajecifrado{
+  display:none;
   background: #D4E6F1;
   width:430px;
   height:310px;
@@ -67,7 +75,8 @@ footer{
   border-color: #C0C0C0;
   border-style:solid;
 }
-.mensajedescifrado{
+.Mensajedescifrado{
+  display:none;
   background: #D4E6F1;
   width:430px;
   height:310px;
@@ -76,8 +85,8 @@ footer{
   border-style:solid;
 }
 button {
-    background: #eb94d0;
-    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background: #eb94d0;
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
