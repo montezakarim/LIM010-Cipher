@@ -28,6 +28,8 @@ btncifrar.addEventListener('click', () => {
   document.getElementById ('cifrar-descifrar').style.display='none';
   document.getElementById('descifrado').style.display='none';
   document.getElementById('cifrado').style.display='block';
+  document.getElementById('text1').value='';
+  document.getElementById('offset1').value='';
 });
 /* acción descifrar */
 const btndescifrar=document.getElementById('descifrar');
@@ -35,6 +37,8 @@ btndescifrar.addEventListener('click', () => {
   document.getElementById ('cifrar-descifrar').style.display='none';
   document.getElementById('cifrado').style.display='none';
   document.getElementById('descifrado').style.display='block';
+  document.getElementById('text2').value='';
+  document.getElementById('offset2').value='';
 });
 /* Ingresar offset para cifrar */
 const btnoffsetcifrar=document.getElementById('aceptarcifrar');
@@ -63,10 +67,14 @@ const finalizar=document.getElementById('fin');
 finalizar.addEventListener('click', () => {
   document.getElementById('mensajecifrado').style.display='none';
   document.getElementById('nombre-contraseña').style.display='block';
+  document.getElementById('nombre').value='';
+  document.getElementById('contraseña').value='';
 });
 /*finalizar y regresar al inicio*/
 const finalizar1=document.getElementById('fin1');
 finalizar1.addEventListener('click', () => {
   document.getElementById('Mensajedescifrado').style.display='none';
   document.getElementById('nombre-contraseña').style.display='block';
+  document.getElementById('nombre').value='';
+  document.getElementById('contraseña').value='';
 });
