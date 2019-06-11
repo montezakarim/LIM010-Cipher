@@ -1,42 +1,56 @@
-/*nombre de usuario*/
+/*declarar variables classList*/
+const nombrecontraseña=document.getElementById('nombrecontraseña');
+const cifrardescifrar=document.getElementById('cifrardescifrar');
+const cifrado=document.getElementById('cifrado');
+const descifrado=document.getElementById('descifrado');
+const mensajecifrado=document.getElementById('mensajecifrado');
+const mensajedescifrado=document.getElementById('Mensajedescifrado')
 /* Validando Contraseña */
 const btningresar=document.getElementById('ingresar');
 const contraseña= document.getElementById('contraseña');
+const incorrecta=document.getElementById('incorrecta')
 let contador=0;
 btningresar.addEventListener('click', () => {
-  if (contraseña.value==="LABORATORIA") {
+  if (contraseña.value==='LABORATORIA') {
   const nombreusuario=document.getElementById('nombre').value;
   console.log(nombreusuario);
   document.getElementById('usuario').innerHTML='Hola '+ nombreusuario;
-  document.getElementById('nombre-contraseña').style.display='none';
-  document.getElementById ('cifrar-descifrar').style.display='block';
+  nombrecontraseña.classList.add('hide');
+  cifrardescifrar.classList.remove('hide');
   }
-  if (contraseña.value!=="LABORATORIA") {
-    contador=contador+1;
+  if (contraseña.value!=='LABORATORIA') {
+    if (contraseña.value==='') {
+    alert('Ingrese Contraseña');
+  }
+  else {
+      contador=contador+1;
       if (contador<3) {
-        alert("Contraseña Incorrecta, intenta otra Vez");
+        incorrecta.innerHTML='Contraseña Incorrecta, intenta otra Vez';
       }
       else {
-     alert("Contraseña incorrecta, no podrás cifrar ni descifrar el mensaje");
-     document.getElementById('nombre-contraseña').style.display='none';
+        incorrecta.innerHTML='Contraseña incorrecta, no podrás cifrar ni descifrar el mensaje';
+        ingresar.disabled=true;
     }
   }
+  }
+  document.getElementById('nombre').value='';
+  document.getElementById('contraseña').value='';
+
+
 });
 /* acción cifrar */
 const btncifrar=document.getElementById('cifrar');
 btncifrar.addEventListener('click', () => {
-  document.getElementById ('cifrar-descifrar').style.display='none';
-  document.getElementById('descifrado').style.display='none';
-  document.getElementById('cifrado').style.display='block';
+  cifrardescifrar.classList.add('hide');
+  cifrado.classList.remove('hide');
   document.getElementById('text1').value='';
   document.getElementById('offset1').value='';
 });
 /* acción descifrar */
 const btndescifrar=document.getElementById('descifrar');
 btndescifrar.addEventListener('click', () => {
-  document.getElementById ('cifrar-descifrar').style.display='none';
-  document.getElementById('cifrado').style.display='none';
-  document.getElementById('descifrado').style.display='block';
+  cifrardescifrar.classList.add('hide');
+  descifrado.classList.remove('hide');
   document.getElementById('text2').value='';
   document.getElementById('offset2').value='';
 });
@@ -48,8 +62,8 @@ btnoffsetcifrar.addEventListener('click', () => {
   const encriptado=document.getElementById('encriptado');
   let mensaje1=cipher.encode(offset1.value, string1.value);
   encriptado.innerHTML=(mensaje1);
-  document.getElementById('cifrado').style.display='none';
-  document.getElementById ('mensajecifrado').style.display='block';
+  cifrado.classList.add('hide');
+  mensajecifrado.classList.remove('hide');
 });
 /* Ingresar offset para descifrar*/
 const btnoffsetdescifrar=document.getElementById('aceptardescifrar')
@@ -59,22 +73,23 @@ btnoffsetdescifrar.addEventListener('click',()=>{
   const mjdescifrado=document.getElementById('mjdescifrado');
   let mensaje2=cipher.decode(offset2.value, string2.value);
   mjdescifrado.innerHTML=(mensaje2)
-  document.getElementById('descifrado').style.display='none';
-  document.getElementById ('Mensajedescifrado').style.display='block';
+  descifrado.classList.add('hide');
+  mensajedescifrado.classList.remove('hide');
 });
 /*finalizar y regresar al inicio*/
 const finalizar=document.getElementById('fin');
 finalizar.addEventListener('click', () => {
-  document.getElementById('mensajecifrado').style.display='none';
-  document.getElementById('nombre-contraseña').style.display='block';
+  mensajecifrado.classList.add('hide');
+  nombrecontraseña.classList.remove('hide')
   document.getElementById('nombre').value='';
   document.getElementById('contraseña').value='';
 });
 /*finalizar y regresar al inicio*/
 const finalizar1=document.getElementById('fin1');
 finalizar1.addEventListener('click', () => {
-  document.getElementById('Mensajedescifrado').style.display='none';
-  document.getElementById('nombre-contraseña').style.display='block';
+mensajedescifrado.classList.add('hide');
+nombrecontraseña.classList.remove('hide')
   document.getElementById('nombre').value='';
   document.getElementById('contraseña').value='';
+  document.getElementById('incorrecta').value='';
 });
