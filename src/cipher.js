@@ -8,7 +8,7 @@ for (let i = 0; i < string.length; i++) {
     position=string.charCodeAt(i);
   }
   else {
-    position= (string.toUpperCase().charCodeAt(i)-65+ parseInt(offset))%26+65;
+    position= (string.charCodeAt(i)-65+ parseInt(offset))%26+65;
   }
   let mensaje=String.fromCharCode(position);
   MensajeCifrado+=mensaje;
@@ -24,7 +24,7 @@ return MensajeCifrado;
         position1=string.charCodeAt(i);
       }
       else {
-        position1= 90-((90-string.toUpperCase().charCodeAt(i)+ parseInt(offset))%26);
+        position1= 90-((90-string.charCodeAt(i)+ parseInt(offset))%26);
       }
       let mensaje1=String.fromCharCode(position1);
       Mensajedescifrado+=mensaje1;

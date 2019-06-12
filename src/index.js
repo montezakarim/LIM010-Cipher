@@ -13,7 +13,6 @@ let contador=0;
 btningresar.addEventListener('click', () => {
   if (contraseña.value==='LABORATORIA') {
   const nombreusuario=document.getElementById('nombre').value;
-  console.log(nombreusuario);
   document.getElementById('usuario').innerHTML='Hola '+ nombreusuario;
   nombrecontraseña.classList.add('hide');
   cifrardescifrar.classList.remove('hide');
@@ -28,15 +27,13 @@ btningresar.addEventListener('click', () => {
         incorrecta.innerHTML='Contraseña Incorrecta, intenta otra Vez';
       }
       else {
-        incorrecta.innerHTML='Contraseña incorrecta, no podrás cifrar ni descifrar el mensaje';
-        ingresar.disabled=true;
+        incorrecta.innerHTML='Ya utilizaste todos tus intentos, en este momento no podrás ingresar';
+        btningresar.disabled=true;
     }
   }
   }
   document.getElementById('nombre').value='';
   document.getElementById('contraseña').value='';
-
-
 });
 /* acción cifrar */
 const btncifrar=document.getElementById('cifrar');
@@ -77,12 +74,25 @@ btnoffsetdescifrar.addEventListener('click',()=>{
   mensajedescifrado.classList.remove('hide');
 });
 /*finalizar y regresar al inicio*/
+const volver=document.getElementById('volver');
+volver.addEventListener('click', () => {
+  mensajecifrado.classList.add('hide');
+  cifrardescifrar.classList.remove('hide');
+});
+/*finalizar y regresar al inicio*/
+const volver1=document.getElementById('volver1');
+volver1.addEventListener('click', () => {
+  mensajedescifrado.classList.add('hide');
+  cifrardescifrar.classList.remove('hide');
+});
+/*finalizar y regresar al inicio*/
 const finalizar=document.getElementById('fin');
 finalizar.addEventListener('click', () => {
   mensajecifrado.classList.add('hide');
-  nombrecontraseña.classList.remove('hide')
+  nombrecontraseña.classList.remove('hide');
   document.getElementById('nombre').value='';
   document.getElementById('contraseña').value='';
+  document.getElementById('incorrecta').innerHTML="";
 });
 /*finalizar y regresar al inicio*/
 const finalizar1=document.getElementById('fin1');
@@ -91,5 +101,5 @@ mensajedescifrado.classList.add('hide');
 nombrecontraseña.classList.remove('hide')
   document.getElementById('nombre').value='';
   document.getElementById('contraseña').value='';
-  document.getElementById('incorrecta').value='';
+  document.getElementById('incorrecta').innerHTML="";
 });

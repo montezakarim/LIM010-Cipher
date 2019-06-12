@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
       <title>Safe Text</title>
-      <meta name='viewport' content='width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0'>
-      <link rel='stylesheet' href='style.css'/>
+      <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0">
+      <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <!-- título -->
@@ -13,29 +13,29 @@
       </header>
       <main>
           <!-- Párrafo, nombre y constraseña-->
-          <section class='nombrecontraseña ' id='nombrecontraseña'>
+          <section class="nombrecontraseña" id="nombrecontraseña">
               <h2>Bienvenido a Safe Text</h2>
               <p>Te ayudaremos a mantener seguro tu mensaje
               <br>
               Para empezar ingresa tu nombre y contraseña.</p>
               <!-- Ingresar nombre y contraseña -->
-              <input type='text' id='nombre' placeholder='Nombre' >
-              <input type='password' id="contraseña" placeholder="Contraseña" >
+              <input type="text" id="nombre" placeholder="Nombre" >
+              <input type="password" id="contraseña" placeholder="Contraseña" >
               <br>
               <span id="incorrecta">
               </span>
               <br>
-              <button type='button' id='ingresar'>Ingresar</button>
+              <button type="button" id="ingresar">Ingresar</button>
           </section>
           <!-- si es correcto cifrar o descifrar mensaje -->
-          <section class='cifrardescifrar hide' id='cifrardescifrar' >
-            <h2 id='usuario'>Hola</h2>
+          <section class="cifrardescifrar hide" id="cifrardescifrar" >
+            <h2 id="usuario">Hola</h2>
             <p>Elije que acción vas a realizar</p>
-            <button type='button' id='cifrar'>Cifrar Mensaje</button>
-            <button type='button' id='descifrar'>Descubrir Mensaje</button>
+            <button type="button" id="cifrar">Cifrar Mensaje</button>
+            <button type="button" id="descifrar">Descubrir Mensaje</button>
           </section>
           <!-- Si elige cifrar, ingresa texto y offset -->
-          <section class='cifrado hide' id='cifrado'>
+          <section class="cifrado hide" id="cifrado">
               <p>Ingresa el texto de tu mensaje a cifrar
               <br>
               Y el código para cifrar
@@ -43,41 +43,43 @@
               (Recuerda que es de 1 o 2 dígitos)
               <br>
               </p>
-              <input type="text" id='text1' placeholder="Ingresa el texto a cifrar" >
+              <input type="text" id="text1" placeholder="Ingresa el texto a cifrar" >
               <br><br><br>
-              <input type="number" id='offset1' placeholder="Ingresa el código" >
+              <input type="number" id="offset1" placeholder="Ingresa el código" >
               <br>
-              <button type="button" id='aceptarcifrar'>Aceptar</button>
+              <button type="button" id="aceptarcifrar">Aceptar</button>
           </section>
             <!--  si acepta muestra resultado y boton finalizar-->
-          <section class='mensajecifrado hide' id='mensajecifrado'>
-            <h2 id='encriptado'>Aquí se muestra el mensaje cifrado </h2>
+          <section class="mensajecifrado hide" id="mensajecifrado">
+            <h2 id="encriptado">Aquí se muestra el mensaje cifrado </h2>
             <br>
             <p>Ahora puedes compartir este mensaje con total seguridad</p>
             <br>
-            <button type='button' id='fin'>Finalizar</button>
+            <button type="button"id="volver">Volver</button>
+            <button type="button" id="fin">Finalizar</button>
           </section>
           <!-- Si eleige descifrar, ingresa texto y offset-->
-          <section class='descifrado hide' id='descifrado'>
+          <section class="descifrado hide" id="descifrado">
               <p>Ingresa el texto del mensaje a descubrir
               <br>
               Y el código  para descifrar
               <br>
               (Recuerda que es de 1 o 2 dígitos)
               </p>
-              <input type='text' id='text2' placeholder='Ingresa el texto que vas a descifrar' >
+              <input type="text" id="text2" placeholder="Ingresa el texto que vas a descifrar" >
               <br><br>
-              <input type='number' id='offset2' placeholder='Ingresa el código'>
+              <input type="number" id="offset2" placeholder="Ingresa el código">
               <br>
-              <button type='button' id='aceptardescifrar'>Aceptar</button>
+              <button type="button" id="aceptardescifrar">Aceptar</button>
           </section>
           <!-- Si acepta muestra mensaje descifrado y boton finalizar  -->
-          <section class='Mensajedescifrado hide' id='Mensajedescifrado'>
-            <h2 id='mjdescifrado'>Aquí se muestra el mensaje descifrado</h2>
+          <section class="Mensajedescifrado hide" id="Mensajedescifrado">
+            <h2 id="mjdescifrado">Aquí se muestra el mensaje descifrado</h2>
             <br>
             <p>Ahora también puedes compratir información confidenciale con tus contactos</p>
             <br>
-            <button type='button' id='fin1'>Finalizar</button>
+            <button type="button"id="volver1">Volver</button>
+            <button type="button" id="fin1">Finalizar</button>
           </section>
       </main>
       <!-- Pie de página -->
