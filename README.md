@@ -3,15 +3,24 @@
 ## Índice
 
 - [Índice](#índice)
+- [Título del Proyecto](#título-proyecto)
 - [Introducción](#introducción)
+- [Imagen Final](#imagen-final)
 - [Investigación UX](#invvestigación-ux)
 - [Prototipo de papel](#prototipo-de-papel)
 - [Feedback](#feedback)
 - [Prototipo Balsamiq](#prototipo-balsamiq)
 
+## Título del Proyecto
+
+**Safe Text**
+
 ## Introducción
 
 Para nuestros clientes lo más importante es la seguridad de sus datos personales y mensajes confidenciales, por ello no debe caer en manos de personas equivocadas y **Safe Text** busca proteger esos datos sensibles con un mensaje encriptado siendo descifrado por la persona correcta o viceversa.
+
+## Imagen Final
+!['Prototipo-Papel'](img/Safetext.PNG)
 
 ## Investigación UX
 
