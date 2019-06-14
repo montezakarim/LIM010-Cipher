@@ -19,7 +19,7 @@ btningresar.addEventListener('click', () => {
   }
   if (contraseña.value!=='LABORATORIA') {
     if (contraseña.value==='') {
-    alert('Ingrese Contraseña');
+      incorrecta.innerHTML='Ingrese Contraseña';
   }
   else {
       contador=contador+1;
@@ -92,7 +92,8 @@ finalizar.addEventListener('click', () => {
   nombrecontraseña.classList.remove('hide');
   document.getElementById('nombre').value='';
   document.getElementById('contraseña').value='';
-  document.getElementById('incorrecta').innerHTML="";
+  document.getElementById('incorrecta').innerHTML='';
+  incorrecta.innerHTML='';
 });
 /*finalizar y regresar al inicio*/
 const finalizar1=document.getElementById('fin1');
@@ -102,4 +103,5 @@ nombrecontraseña.classList.remove('hide')
   document.getElementById('nombre').value='';
   document.getElementById('contraseña').value='';
   document.getElementById('incorrecta').innerHTML="";
+  incorrecta.innerHTML='';
 });

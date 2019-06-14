@@ -142,3 +142,12 @@ input{
 input:hover{
   opacity: 1;
 }
+textarea{
+  background: #f0f0f0;
+  font: 15px verdana;
+  border: 1;
+  color: black;
+  cursor: pointer;
+  margin: 5px auto;
+  opacity:0.9;
+}
