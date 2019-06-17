@@ -19,8 +19,8 @@
               <h2>Bienvenido a Safe Text</h2>
               <p>Te ayudaremos a mantener seguro tu mensaje<br>Para empezar ingresa tu nombre y contraseña.</p>
               <!-- Ingresar nombre y contraseña -->
-              <input type="text" id="nombre" placeholder="Nombre" >
-              <input type="password" id="contraseña" placeholder="Contraseña" >
+              <input type="text" class="opacity" id="nombre" placeholder="Nombre" >
+              <input type="password" class="opacity" id="contraseña" placeholder="Contraseña" >
               <br>
               <span id="incorrecta"></span>
               <br>
@@ -37,8 +37,8 @@
           <!-- Si elige cifrar, ingresa texto y offset -->
           <section class="hide container" id="cifrado">
               <p>Ingresa el texto de tu mensaje a cifrar<br>Y el código para cifrar</p>
-              <textarea id="text1" cols="40" rows="5" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
-              <input type="number" id="offset1" placeholder="Código" ><br>
+              <textarea id="text1" class="opacity" cols="40" rows="5" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
+              <input type="number" class="size opacity" id="offset1" placeholder="Código" ><br>
               <button type="button" id="aceptarcifrar">Aceptar</button>
           </section>
             <!--  si acepta muestra resultado y boton finalizar-->
@@ -51,8 +51,8 @@
           <!-- Si eleige descifrar, ingresa texto y offset-->
           <section class="hide container" id="descifrado">
               <p>Ingresa el texto del mensaje a descubrir<br>Y el código para descifrar</p><br>
-              <textarea id="text2" cols="40" rows="5" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
-              <input type="number" id="offset2" placeholder="Código"><br>
+              <textarea id="text2" class="opacity" cols="40" rows="5" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
+              <input type="number" class="size opacity" id="offset2" placeholder="Código"><br>
               <button type="button" id="aceptardescifrar">Aceptar</button>
           </section>
           <!-- Si acepta muestra mensaje descifrado y boton finalizar  -->

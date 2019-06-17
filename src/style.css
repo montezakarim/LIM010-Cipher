@@ -6,15 +6,13 @@ body{
   background-attachment: fixed; /* figar la imagen en la panatalla */
   background-size: cover;/* al 100% y se reescala */
   background-color: #F1FAFA; /* color */
-  box-sizing: border-box;
 }
 
 .box{
  width: 80%;
  max-width: 1000px;
  margin: 0 auto;
- overflow: hidden
- box-sizing: border-box;
+ overflow: hidden; /* contenido recortao y no se muestran barras de posición */
 }
 
 .title-foot{
@@ -97,15 +95,9 @@ input{
   color: black;
   cursor: text;
   margin: 5px auto;
-  opacity:0.9;
 }
 
-#offset1{
-  width: 100px;
-  height: 30px;
-}
-
-#offset2{
+.size{
   width: 100px;
   height: 30px;
 }
@@ -121,6 +113,9 @@ textarea{
   color: black;
   cursor: text;
   margin: 5px auto;
-  opacity:0.9;
   box-sizing: border-box;
+}
+
+.opacity{
+  opacity:0.9;
 }
