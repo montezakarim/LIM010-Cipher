@@ -10,58 +10,58 @@
      <!-- div para responsive web Caja-->
     <div class="box">
     <!-- título -->
-      <header class="title-foot">
+      <header class="title-foot icons">
         <h1>Safe Text</h1>
       </header>
       <main>
           <!-- Párrafo, nombre y constraseña-->
-          <section class="container" id="nombrecontraseña">
+          <section class="container margin" id="nombrecontraseña">
               <h2>Bienvenido a Safe Text</h2>
               <p>Te ayudaremos a mantener seguro tu mensaje<br>Para empezar ingresa tu nombre y contraseña.</p>
               <!-- Ingresar nombre y contraseña -->
-              <input type="text" class="opacity" id="nombre" placeholder="Nombre" >
-              <input type="password" class="opacity" id="contraseña" placeholder="Contraseña" >
+              <input type="text" class="opacity margin" id="nombre" placeholder="Nombre" >
+              <input type="password" class="opacity margin icons" id="contraseña" placeholder="Contraseña" >
               <br>
               <span id="incorrecta"></span>
               <br>
-              <button type="button" id="ingresar">Ingresar</button>
+              <button type="button" class="margin" id="ingresar">Ingresar</button>
           </section>
           <!-- si es correcto cifrar o descifrar mensaje -->
-          <section class="hide container" id="cifrardescifrar" >
+          <section class="hide container margin" id="cifrardescifrar" >
             <h2 id="usuario">Hola</h2>
             <p>Elije que acción vas a realizar</p>
             <br>
-            <button type="button" id="cifrar">Cifrar Mensaje</button>
-            <button type="button" id="descifrar">Descubrir Mensaje</button>
+            <button type="button" class="icons margin" id="cifrar">Cifrar Mensaje</button>
+            <button type="button" class="icons margin" id="descifrar">Descubrir Mensaje</button>
           </section>
           <!-- Si elige cifrar, ingresa texto y offset -->
-          <section class="hide container" id="cifrado">
+          <section class="hide container margin" id="cifrado">
               <p>Ingresa el texto de tu mensaje a cifrar<br>Y el código para cifrar</p>
-              <textarea id="text1" class="opacity" cols="40" rows="5" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
-              <input type="number" class="size opacity" id="offset1" placeholder="Código" ><br>
-              <button type="button" id="aceptarcifrar">Aceptar</button>
+              <textarea id="text1" class="opacity margin" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
+              <input type="number" class="size opacity margin" id="offset1" placeholder="Código" ><br>
+              <button type="button" class="margin" id="aceptarcifrar">Aceptar</button>
           </section>
             <!--  si acepta muestra resultado y boton finalizar-->
-          <section class="hide container" id="mensajecifrado">
+          <section class="hide container margin" id="mensajecifrado">
             <h2 id="encriptado">Aquí se muestra el mensaje cifrado </h2>
             <br><p>Ahora puedes compartir este mensaje con total seguridad</p>
-            <button type="button" id="volver">Volver</button>
-            <button type="button" id="fin">Finalizar</button>
+            <button type="button" class="margin" id="volver">Volver</button>
+            <button type="button" class="margin" id="fin">Finalizar</button>
           </section>
           <!-- Si eleige descifrar, ingresa texto y offset-->
-          <section class="hide container" id="descifrado">
-              <p>Ingresa el texto del mensaje a descubrir<br>Y el código para descifrar</p><br>
-              <textarea id="text2" class="opacity" cols="40" rows="5" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
-              <input type="number" class="size opacity" id="offset2" placeholder="Código"><br>
-              <button type="button" id="aceptardescifrar">Aceptar</button>
+          <section class="hide container margin" id="descifrado">
+              <p>Ingresa el texto del mensaje a descubrir<br>Y el código para descifrar</p>
+              <textarea id="text2" class="opacity margin" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
+              <input type="number" class="size opacity margin" id="offset2" placeholder="Código"><br>
+              <button type="button" class="margin" id="aceptardescifrar">Aceptar</button>
           </section>
           <!-- Si acepta muestra mensaje descifrado y boton finalizar  -->
-          <section class="hide container" id="Mensajedescifrado">
+          <section class="hide container margin" id="Mensajedescifrado">
             <h2 id="mjdescifrado">Aquí se muestra el mensaje descifrado</h2>
             <br>
             <p>Ahora puedes compartir la web y compartir información confidencial con tus contactos</p><br>
-            <button type="button" id="volver1">Volver</button>
-            <button type="button" id="fin1">Finalizar</button>
+            <button type="button" class="margin" id="volver1">Volver</button>
+            <button type="button" class="margin" id="fin1">Finalizar</button>
           </section>
       </main>
       <!-- Pie de página -->

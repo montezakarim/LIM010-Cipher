@@ -18,17 +18,19 @@ body{
 .title-foot{
   color:#fff;
   text-align: center;
-  background-color:#333333 ;
+  background-color:#302f2f ;
   border:2px #4e4d4d;
-  box-shadow:inset 0 0 10px #000;
+  box-shadow:inset 0 0 10px #000;/* para la sombra */
   margin: auto;
-  box-sizing: border-box;
+  box-sizing: border-box;/*mantenner su tamaño sin tener que expandirse mas*/
 }
 
 header{
-  font-size: 30pt;
-  height: 150px;
+  font-size: 25pt;
+  height: 100px;
   width: 50%;
+  background-image: url('../img/lock\ \(4\).ico');/* ruta de la imagen */
+  background-size: 20%;
 }
 
 footer{
@@ -53,34 +55,32 @@ footer{
   background-color: #333333;
   border:2px #4e4d4d solid;
   box-shadow:inset 0 0 10px #000;
-  margin: 5px auto;
   box-sizing: border-box;
 }
 
 #incorrecta{
   color:#4682B4;
   font-size: 18px;
-  box-sizing: border-box;
 }
 
 button {
-  width: 130px;
-  margin: 20px 0px 30px 30px;
+  width: 135px;
   height: 50px;
-  background: #eb94d0;
+  background: #50789c;
   background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
   background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
   border:1px solid #232323;
-  border-radius: 60px;
-  box-shadow: 0px 2px 0px #000;
-  font-size: 18px;
+  border-radius: 50px;/* borde redondeado */
+  box-shadow: 0px 4px 0px #000;
+  font-size: 19px;
+  color: #F1FAFA;
 }
 
 button:hover {
-    cursor: pointer;
+    cursor: pointer; /* el botón cambia a este color cuando se pone el cursor encima */
     opacity: 1;
 }
 
@@ -88,13 +88,22 @@ button:active{
   transform: scale(0.90);
 }
 
+#cifrar{
+  background-image: url(../img/lock\ \(2\).ico);
+  background-size: 30%;
+}
+
+#descifrar{
+  background-image: url(../img/lock\ \(1\).ico);
+  background-size: 30%;
+}
 input{
   background: #f0f0f0;
   font: 20px verdana;
   border: 1;
   color: black;
-  cursor: text;
-  margin: 5px auto;
+  cursor: text;/* estilo del puntero*/
+  margin: 10px auto;
 }
 
 .size{
@@ -106,16 +115,55 @@ input:hover{
   opacity: 1;
 }
 
+#contraseña{
+  background-image: url(../img/key1.ico);
+}
 textarea{
   background: #f0f0f0;
   font: 15px verdana;
   border: 1;
   color: black;
   cursor: text;
-  margin: 5px auto;
+  width: 90%;
+  height: 80px;
   box-sizing: border-box;
 }
 
 .opacity{
   opacity:0.9;
 }
+
+.margin{
+  margin: 5px auto;
+}
+
+.icons{
+  background-repeat: no-repeat;
+  background-position: right;
+}
+	/* para 950px o menos */
+	@media screen and (max-width:700px) {
+    header{
+      width: 60%;
+      height: 30px;
+    }
+    .container{
+      width: 60%;
+      height: 200px;
+    }
+    .title-foot, .container, button, textarea, input, #incorrecta{
+      font-size: 10px;
+    }
+    button, .size{
+      width: 60px;
+      height: 30px;
+    }
+    input{
+      width: 100px;
+      height: 20px;
+    }
+    textarea{
+      width: 100px;
+      height: 40px;
+    }
+  }

@@ -10,6 +10,7 @@
 - [Prototipo de papel](#prototipo-de-papel)
 - [Feedback](#feedback)
 - [Prototipo Balsamiq](#prototipo-balsamiq)
+- [Feedback Coach Squad Usuario](#feedback-coach-squad-usuario)
 
 ## Título del Proyecto
 
@@ -37,3 +38,11 @@ Un poco más de explicación la página, para que el cliente sepa qué debe hace
 
 ## Prototipo Balsamiq
 !['Prototipo-Balsamiq'](img/balsamiq.PNG)
+
+## Feedback Coach Squad Usuario
+Se mejoró los estilos y semantica del proyecto, se codificó para descifrar numeros y otros caracteres a solicitu del cliente para mayor seguridad, por requerimiento del cliente se implementó Botón volver, porque era tedioso para ellos volver a ingresar la contraseña, se bloqueó el boton para ingresar para ingresar despues del tercer intento y se eliminó el alert para el aviso de Contraseña incorrecta. 
+
+!['Prototipo-Balsamiq'](img/balsamiqfinal.PNG)
+
+
+Karim Monteza.
