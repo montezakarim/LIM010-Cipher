@@ -3,7 +3,7 @@ body{
   background-image: url('../img/seg3.jpg');/* ruta de la imagen */
   background-position: center center;/* centrado en vertical y horizontal */
   background-repeat: no-repeat;/* no se repite, no mosaico */
-  background-attachment: fixed; /* figar la imagen en la panatalla */
+  background-attachment: fixed; /* figar la imagen en la pantalla */
   background-size: cover;/* al 100% y se reescala */
   background-color: #F1FAFA; /* color */
 }
@@ -58,7 +58,7 @@ footer{
   box-sizing: border-box;
 }
 
-#incorrecta{
+#incorrect{
   color:#4682B4;
   font-size: 18px;
 }
@@ -144,18 +144,18 @@ textarea{
 	/* para 950px o menos */
 	@media screen and (max-width:950px) {
     header{
-      width: 60%;
+      width: 90%;
       height: 30px;
     }
     .container{
-      width: 60%;
-      height: 200px;
+      width: 90%;
+      height: 250px;
     }
-    .title-foot, .container, button, textarea, input, #incorrecta{
-      font-size: 10px;
+    .title-foot, .container, button, textarea, input, #incorrect{
+      font-size: 15px;
     }
     button, .size{
-      width: 60px;
+      width: 70px;
       height: 30px;
     }
     input{

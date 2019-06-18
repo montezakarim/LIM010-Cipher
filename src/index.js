@@ -1,27 +1,27 @@
 /*declarar variables classList*/
-const namePassword=document.getElementById('nombrecontraseña');
-const ciphers=document.getElementById('cifrardescifrar');
-const encode1=document.getElementById('cifrado');
-const decode1=document.getElementById('descifrado');
-const messageEncode=document.getElementById('mensajecifrado');
-const messageDecode=document.getElementById('Mensajedescifrado')
+const namePassword=document.getElementById('namePassword');
+const ciphers=document.getElementById('ciphers');
+const encode1=document.getElementById('encode1');
+const decode1=document.getElementById('decode1');
+const messageEncode=document.getElementById('messageEncode');
+const messageDecode=document.getElementById('messageDecode')
 /* Validando Contraseña */
-const btnEnter=document.getElementById('ingresar');
-const password= document.getElementById('contraseña');
-const incorrect=document.getElementById('incorrecta')
+const btnEnter=document.getElementById('enter');
+const password= document.getElementById('password');
+const incorrect=document.getElementById('incorrect')
 let counter=0;
 btnEnter.addEventListener('click', () => {
-  if (password.value==='LABORATORIA') {
-  const nameUser=document.getElementById('nombre').value;
-  document.getElementById('usuario').innerHTML='Hola '+ nameUser;
-  namePassword.classList.add('hide');
-  ciphers.classList.remove('hide');
-  }
-  if (password.value!=='LABORATORIA') {
-    if (password.value==='') {
-      incorrect.innerHTML='Ingrese Contraseña';
-  }
-  else {
+  if (password.value==='') {
+    incorrect.innerHTML='Ingrese Contraseña';
+  } 
+  else{
+    if (password.value==='LABORATORIA') {
+      const nameUser=document.getElementById('name').value;
+      document.getElementById('user').innerHTML='Hola '+ nameUser;
+      namePassword.classList.add('hide');
+      ciphers.classList.remove('hide');
+    }
+    else {
       counter=counter+1;
       if (counter<3) {
         incorrect.innerHTML='Contraseña Incorrecta, intenta otra Vez';
@@ -29,10 +29,10 @@ btnEnter.addEventListener('click', () => {
       else {
         incorrect.innerHTML='Ya utilizaste todos tus intentos, en este momento no podrás ingresar';
         btnEnter.disabled=true;
+      }
     }
   }
-  }
-  document.getElementById('nombre').value='';
+  document.getElementById('name').value='';
   password.value='';
 });
 /* acción cifrar */
@@ -86,20 +86,20 @@ volver1.addEventListener('click', () => {
   ciphers.classList.remove('hide');
 });
 /*finalizar y regresar al inicio*/
-const finalizar=document.getElementById('fin');
+const finalizar=document.getElementById('end');
 finalizar.addEventListener('click', () => {
   messageEncode.classList.add('hide');
   namePassword.classList.remove('hide');
-  document.getElementById('nombre').value='';
+  document.getElementById('name').value='';
   password.value='';
   incorrect.innerHTML='';
 });
 /*finalizar y regresar al inicio*/
-const finalizar1=document.getElementById('fin1');
+const finalizar1=document.getElementById('end1');
 finalizar1.addEventListener('click', () => {
 messageDecode.classList.add('hide');
 namePassword.classList.remove('hide')
-  document.getElementById('nombre').value='';
+  document.getElementById('name').value='';
   password.value='';
   incorrect.innerHTML='';
 });
