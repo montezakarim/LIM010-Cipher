@@ -36,58 +36,58 @@ btnEnter.addEventListener('click', () => {
   password.value='';
 });
 /* acción cifrar */
-const btncifrar=document.getElementById('cifrar');
-btncifrar.addEventListener('click', () => {
+const btnEncode=document.getElementById('btnEncode');
+btnEncode.addEventListener('click', () => {
   ciphers.classList.add('hide');
   encode1.classList.remove('hide');
-  document.getElementById('text1').value='';
+  document.getElementById('string1').value='';
   document.getElementById('offset1').value='';
 });
 /* acción descifrar */
-const btndescifrar=document.getElementById('descifrar');
-btndescifrar.addEventListener('click', () => {
+const btnDecode=document.getElementById('btnDecode');
+btnDecode.addEventListener('click', () => {
   ciphers.classList.add('hide');
   decode1.classList.remove('hide');
-  document.getElementById('text2').value='';
+  document.getElementById('string2').value='';
   document.getElementById('offset2').value='';
 });
 /* Ingresar offset para cifrar */
-const btnoffsetcifrar=document.getElementById('aceptarcifrar');
-btnoffsetcifrar.addEventListener('click', () => {
-  const string1=document.getElementById('text1');
+const btnOkEncode=document.getElementById('btnOkEncode');
+btnOkEncode.addEventListener('click', () => {
+  const string1=document.getElementById('string1');
   const offset1=document.getElementById('offset1');
-  const encriptado=document.getElementById('encriptado');
-  let mensaje1=cipher.encode(offset1.value, string1.value);
-  encriptado.innerHTML=(mensaje1);
+  const encrypted=document.getElementById('encrypted');
+  let message1=cipher.encode(offset1.value, string1.value);
+  encrypted.innerHTML=(message1);
   encode1.classList.add('hide');
   messageEncode.classList.remove('hide');
 });
 /* Ingresar offset para descifrar*/
-const btnoffsetdescifrar=document.getElementById('aceptardescifrar')
-btnoffsetdescifrar.addEventListener('click',()=>{
-  const string2=document.getElementById('text2');
+const btnOkDecode=document.getElementById('btnOkDecode');
+btnOkDecode.addEventListener('click',()=>{
+  const string2=document.getElementById('string2');
   const offset2=document.getElementById('offset2');
-  const mjdescifrado=document.getElementById('mjdescifrado');
-  let mensaje2=cipher.decode(offset2.value, string2.value);
-  mjdescifrado.innerHTML=(mensaje2)
+  const decrypted=document.getElementById('decrypted');
+  let message2=cipher.decode(offset2.value, string2.value);
+  decrypted.innerHTML=(message2);
   decode1.classList.add('hide');
   messageDecode.classList.remove('hide');
 });
 /*finalizar y regresar al inicio*/
-const volver=document.getElementById('volver');
-volver.addEventListener('click', () => {
+const btnReturn=document.getElementById('return');
+btnReturn.addEventListener('click', () => {
   messageEncode.classList.add('hide');
   ciphers.classList.remove('hide');
 });
 /*finalizar y regresar al inicio*/
-const volver1=document.getElementById('volver1');
-volver1.addEventListener('click', () => {
+const btnReturn1=document.getElementById('return1');
+btnReturn1.addEventListener('click', () => {
   messageDecode.classList.add('hide');
   ciphers.classList.remove('hide');
 });
 /*finalizar y regresar al inicio*/
-const finalizar=document.getElementById('end');
-finalizar.addEventListener('click', () => {
+const end=document.getElementById('end');
+end.addEventListener('click', () => {
   messageEncode.classList.add('hide');
   namePassword.classList.remove('hide');
   document.getElementById('name').value='';
@@ -95,8 +95,8 @@ finalizar.addEventListener('click', () => {
   incorrect.innerHTML='';
 });
 /*finalizar y regresar al inicio*/
-const finalizar1=document.getElementById('end1');
-finalizar1.addEventListener('click', () => {
+const end1=document.getElementById('end1');
+end1.addEventListener('click', () => {
 messageDecode.classList.add('hide');
 namePassword.classList.remove('hide')
   document.getElementById('name').value='';

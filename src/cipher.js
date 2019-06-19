@@ -1,7 +1,7 @@
 window.cipher = {
   encode: (offset, string) => {
     /* Acá va tu código que cifra*/
-    let MensajeCifrado='';
+    let textEncode='';
     let position=0;
     for (let i = 0; i < string.length; i++) {
       if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
@@ -16,14 +16,14 @@ window.cipher = {
       else{
       position=string.charCodeAt(i);
       }
-      let mensaje=String.fromCharCode(position);
-      MensajeCifrado+=mensaje;
+      let message=String.fromCharCode(position);
+      textEncode+=message;
     }
-    return MensajeCifrado;
+    return textEncode;
   },
   decode: (offset, string) => {
     /* Acá va tu código que descifra*/
-    let Mensajedescifrado='';
+    let textDecode='';
     let position1=0;
     for (let i = 0; i < string.length; i++) {
       if (string.charCodeAt(i)>=65 && string.charCodeAt(i)<=90){
@@ -38,9 +38,9 @@ window.cipher = {
       else{
       position1=string.charCodeAt(i);
       }
-      let mensaje1=String.fromCharCode(position1);
-      Mensajedescifrado+=mensaje1;
+      let message1=String.fromCharCode(position1);
+      textDecode+=message1;
     }
-    return Mensajedescifrado;
+    return textDecode;
   }
 };

@@ -7,8 +7,6 @@
       <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-     <!-- div para responsive web Caja-->
-    <div class="box">
     <!-- título -->
       <header class="title-foot icons">
         <h1>Safe Text</h1>
@@ -31,44 +29,43 @@
             <h2 id="user">Hola</h2>
             <p>Elije que acción vas a realizar</p>
             <br>
-            <button type="button" class="icons margin" id="cifrar">Cifrar Mensaje</button>
-            <button type="button" class="icons margin" id="descifrar">Descubrir Mensaje</button>
+            <button type="button" class="icons margin" id="btnEncode">Cifrar Mensaje</button>
+            <button type="button" class="icons margin" id="btnDecode">Descubrir Mensaje</button>
           </section>
           <!-- Si elige cifrar, ingresa texto y offset -->
           <section class="hide container margin" id="encode1">
               <p>Ingresa el texto de tu mensaje a cifrar<br>Y el código para cifrar</p>
-              <textarea id="text1" class="opacity margin" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
+              <textarea id="string1" class="opacity margin" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
               <input type="number" class="size opacity margin" id="offset1" placeholder="Código" ><br>
-              <button type="button" class="margin" id="aceptarcifrar">Aceptar</button>
+              <button type="button" class="margin" id="btnOkEncode">Aceptar</button>
           </section>
             <!--  si acepta muestra resultado y boton finalizar-->
           <section class="hide container margin" id="messageEncode">
-            <h2 id="encriptado">Aquí se muestra el mensaje cifrado </h2>
+            <h2 id="encrypted">Aquí se muestra el mensaje cifrado </h2>
             <br><p>Ahora puedes compartir este mensaje con total seguridad</p>
-            <button type="button" class="margin" id="volver">Volver</button>
+            <button type="button" class="margin" id="return">Volver</button>
             <button type="button" class="margin" id="end">Finalizar</button>
           </section>
           <!-- Si eleige descifrar, ingresa texto y offset-->
           <section class="hide container margin" id="decode1">
               <p>Ingresa el texto del mensaje a descubrir<br>Y el código para descifrar</p>
-              <textarea id="text2" class="opacity margin" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
+              <textarea id="string2" class="opacity margin" placeholder="Ingresa el texto que vas a descifrar" ></textarea><br>
               <input type="number" class="size opacity margin" id="offset2" placeholder="Código"><br>
-              <button type="button" class="margin" id="aceptardescifrar">Aceptar</button>
+              <button type="button" class="margin" id="btnOkDecode">Aceptar</button>
           </section>
           <!-- Si acepta muestra mensaje descifrado y boton finalizar  -->
           <section class="hide container margin" id="messageDecode">
-            <h2 id="mjdescifrado">Aquí se muestra el mensaje descifrado</h2>
+            <h2 id="decrypted">Aquí se muestra el mensaje descifrado</h2>
             <br>
             <p>Ahora puedes compartir la web y compartir información confidencial con tus contactos</p><br>
-            <button type="button" class="margin" id="volver1">Volver</button>
+            <button type="button" class="margin" id="return1">Volver</button>
             <button type="button" class="margin" id="end1">Finalizar</button>
           </section>
       </main>
       <!-- Pie de página -->
       <footer class="title-foot">
-         (c) Todos los Derechos Reservados - Elaborado por Karim Monteza<br> <a href="mailto:kmonteza@hootmail.co"> E-mail</a>
+         (c) Todos los Derechos Reservados - Elaborado por Karim Monteza  <a href="mailto:kmonteza@hootmail.co"> E-mail</a>
       </footer>
-    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
